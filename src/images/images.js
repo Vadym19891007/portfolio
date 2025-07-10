@@ -6,7 +6,13 @@ import html from "./html.jpeg";
 import git from "./git.jpeg";
 import tailwind from "./tailwind.jpeg";
 
-export { myPhoto };
+import instagram from "./instagram.png";
+import facebook from "./facebook.png";
+import github from "./github.png";
+import whatsapp from "./whatsapp.png";
+import telegram from "./telegram.png";
+
+export { myPhoto, instagram, facebook, whatsapp, github, telegram };
 
 export const cards = [
   { img: js, titel: "JavaScript", id: 1 },

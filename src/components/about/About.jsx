@@ -9,7 +9,7 @@ const About = () => {
         </h1>
         <p className="font-poppins ">a frontend developer</p>
         <p className="mt-2">with passion for learning and creating.</p>
-        <button className="mt-10 sm:mt-5 bg-blue-400 w-50 rounded-2xl h-10">
+        <button className="mt-10 sm:mt-5 bg-blue-400 w-50 rounded-2xl h-10 hover:bg-blue-500 cursor-pointer">
           Download CV
         </button>
       </div>
