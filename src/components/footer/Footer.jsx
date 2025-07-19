@@ -1,40 +1,75 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   instagram,
   facebook,
   whatsapp,
   github,
   telegram,
+  instagramBlack,
+  facebookBlack,
+  githubBlack,
+  whatsappBlack,
+  telegramBlack,
 } from "../../images/images";
 
+import { ThemeContext } from "../../App";
+
 const Footer = () => {
+  const { isDark, dark, white } = useContext(ThemeContext);
   return (
-    <div className="bg-gray-900 lg:pb-2 h-20 lg:h-auto text-white grid grid-cols-[1fr_1fr] items-center px-3 lg:grid-cols-1 lg:grid-rows-2 lg:text-center lg:gap-4">
-      <div className="text-sm lg:text-base">Frontend dev com 2025</div>
+    <div
+      className={`${
+        isDark ? dark : white
+      }border-t-1 lg:pb-2 h-1 lg:h-auto  grid grid-cols-[1fr_1fr] items-center px-3 lg:grid-cols-1 lg:grid-rows-2 lg:text-center lg:gap-4`}
+    >
+      <div className="text-sm lg:text-base">Frontend React 2025</div>
       <ul className="flex flex-row justify-center items-center h-full gap-1 md:gap-3 ">
         <li>
-          <a href="https://www.instagram.com/vadimdubovenko/">
-            <img className="w-10" src={instagram} alt="instagramm" />
+          <a href="https://www.instagram.com/vadimdubovenko/" target="_blank">
+            <img
+              className="w-10"
+              src={isDark ? instagram : instagramBlack}
+              alt="instagramm"
+            />
           </a>
         </li>
         <li>
-          <a href="https://www.facebook.com/vadim.dubovenko?locale=ru_RU">
-            <img className="w-10" src={facebook} alt="facebook" />
+          <a
+            href="https://www.facebook.com/vadim.dubovenko?locale=ru_RU "
+            target="_blank"
+          >
+            <img
+              className="w-10"
+              src={isDark ? facebook : facebookBlack}
+              alt="facebook"
+            />
           </a>
         </li>
         <li>
-          <a href="https://github.com/Vadym19891007">
-            <img className="w-10" src={github} alt="git" />
+          <a href="https://github.com/Vadym19891007" target="_blank">
+            <img
+              className="w-10"
+              src={isDark ? github : githubBlack}
+              alt="git"
+            />
           </a>
         </li>
         <li>
-          <a href="">
-            <img className="w-10" src={whatsapp} alt="Whatsapp" />
+          <a href="#" target="_blank">
+            <img
+              className="w-10"
+              src={isDark ? whatsapp : whatsappBlack}
+              alt="Whatsapp"
+            />
           </a>
         </li>
         <li>
-          <a href="https://t.me/Vadym_Dubovenko">
-            <img className="w-10" src={telegram} alt="Telegram" />
+          <a href="https://t.me/Vadym_Dubovenko" target="_blank">
+            <img
+              className="w-10"
+              src={isDark ? telegram : telegramBlack}
+              alt="Telegram"
+            />
           </a>
         </li>
       </ul>

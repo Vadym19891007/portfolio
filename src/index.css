@@ -6,4 +6,40 @@
   --font-poppins: "Poppins", "sans-serif";
   --font-roboto: "Roboto", "sans-serif";
   --font-instrument: "Instrument Serif", "serif";
+
+  --animate-opac: opac 3s ease-out;
+  --animate-contactLeft: contactLeft 2s ease-out;
+  --animate-contactRight: contactRight 2s ease-out;
+
+  @keyframes contactLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes contactRight {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+  @keyframes opac {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 }

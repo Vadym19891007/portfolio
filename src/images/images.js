@@ -12,7 +12,30 @@ import github from "./github.png";
 import whatsapp from "./whatsapp.png";
 import telegram from "./telegram.png";
 
-export { myPhoto, instagram, facebook, whatsapp, github, telegram };
+import instagramBlack from "./instagram.svg";
+import facebookBlack from "./facebook.svg";
+import githubBlack from "./github.svg";
+import whatsappBlack from "./whatsapp.svg";
+import telegramBlack from "./telegram.svg";
+
+import taskList from "./TaskList.png";
+import eCommerce from "./eCommerce.jpg";
+
+export {
+  myPhoto,
+  instagram,
+  facebook,
+  whatsapp,
+  github,
+  telegram,
+  taskList,
+  eCommerce,
+  instagramBlack,
+  facebookBlack,
+  githubBlack,
+  whatsappBlack,
+  telegramBlack,
+};
 
 export const cards = [
   { img: js, titel: "JavaScript", id: 1 },

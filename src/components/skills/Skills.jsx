@@ -11,7 +11,11 @@ const Skills = () => {
               <h3 className="text-center font-poppins font-medium ">
                 {card.titel}
               </h3>
-              <img className="w-auto m-auto " src={card.img} alt={card.titel} />
+              <img
+                className="w-auto m-auto rounded-2xl shadow-2xl shadow-gray-900"
+                src={card.img}
+                alt={card.titel}
+              />
             </div>
           );
         })}
