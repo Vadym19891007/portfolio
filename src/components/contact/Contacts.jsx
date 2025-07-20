@@ -3,9 +3,9 @@ import Title from "../title/Title";
 import { ThemeContext } from "../../App";
 
 const Contacts = () => {
-  const { isDark, dark, white } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   return (
-    <div className="mx-10 pt-10 font-poppins ">
+    <div className={`px-10 w-full pt-10 font-poppins ${theme}`}>
       <Title
         text="Contacts"
         styles="text-3xl text-center text-blue-700 lg:text-5xl"

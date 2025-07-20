@@ -19,13 +19,14 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const dark = " bg-gray-900 text-white ";
+  const dark = " bg-gray-900  text-white white";
   const white = "bg-white text-black black ";
   const [isDark, setIsDark] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const theme = isDark ? dark : white;
   return (
     <ThemeContext.Provider
-      value={{ isOpen, setIsOpen, isDark, setIsDark, white, dark }}
+      value={{ isOpen, setIsOpen, isDark, setIsDark, white, dark, theme }}
     >
       <RouterProvider router={router} />
     </ThemeContext.Provider>

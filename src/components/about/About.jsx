@@ -2,12 +2,10 @@ import React, { useContext } from "react";
 import { myPhoto } from "../../images/images";
 import { ThemeContext } from "../../App";
 const About = () => {
-  const { isDark, dark, white } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   return (
     <div
-      className={`${
-        isDark ? dark : white
-      } shadow-2xl font-poppins  flex flex-col  justify-around md:flex-row items-center md:px-2 lg:px-15 xl:px-25 py-7 lg:justify-around lg:gap-3`}
+      className={`${theme} shadow-2xl font-poppins  flex flex-col  justify-around md:flex-row items-center md:px-2 lg:px-15 xl:px-25 py-7 lg:justify-around lg:gap-3`}
     >
       <div className="  px-7 flex flex-col lg:gap-3  justify-start items-center text-[18px] mt-2 sm:text-[22px] animate-opac">
         <h1 className="text-[25px] sm:text-[30px] lg:text-[40px] font-semibold md:text-[35px] ">

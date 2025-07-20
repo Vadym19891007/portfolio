@@ -4,38 +4,37 @@ import { Menu, X, Moon, Sun } from "lucide-react";
 import { ThemeContext } from "../../App";
 import { useContext } from "react";
 
+import Divider from "../divider/Divider";
+
 const Header = () => {
-  const { isOpen, setIsOpen, isDark, setIsDark, dark, white } =
+  const { isOpen, setIsOpen, isDark, setIsDark, dark, white, theme } =
     useContext(ThemeContext);
 
   return (
     <header
-      className={`flex flex-row justify-between items-center border-1 font-poppins h-15 lg:h-25   ${
+      className={`flex flex-row justify-between items-center focus:outline-0 border-b-1 font-poppins h-15 lg:h-25   ${
         isDark ? dark : white
-      } border-b-${isDark ? "white" : "black"}`}
+      } border-b-${theme}`}
     >
-      <div className="  text-sm  sm:pl-2 md:text-base">
+      <div className="  text-sm  sm:pl-2 md:text-base xl:text-3xl">
         Portfolio from <span className="text-blue-400">Vadym Dubovenko</span>
       </div>
-      <div onClick={() => setIsDark(!isDark)}>
+      <div
+        className="hover:cursor-pointer hover:-translate-y-1 transition duration-500"
+        onClick={() => setIsDark(!isDark)}
+      >
         {isDark ? <Sun /> : <Moon />}
       </div>
       <div className="md:hidden">
         <button onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? (
-            <X
-              className={`${isDark ? "text-white" : "text-black"}`}
-              size={28}
-            />
+            <X className={`${theme}`} size={28} />
           ) : (
-            <Menu
-              size={28}
-              className={`${isDark ? "text-white" : "text-black"}`}
-            />
+            <Menu size={28} className={`${theme}`} />
           )}
         </button>
       </div>
-      <ul className=" w-xs hidden md:flex flex-row justify-end  gap-3 sm:justify-center  md:justify-between md:pr-3 xl:w-110">
+      <ul className=" w-xs hidden md:flex flex-row justify-end  gap-3 sm:justify-center  md:justify-between md:pr-3 xl:w-110 xl:text-2xl">
         <li className="  hover:decoration-solid ">
           <NavLink
             className={({ isActive }) =>
@@ -72,7 +71,9 @@ const Header = () => {
           <ul className="flex flex-col  justify-center items-center gap-y-7">
             <li className="hover:underline hover:decoration-solid ">
               <NavLink
-                className={({ isActive }) => (isActive ? "text-blue-400" : "")}
+                className={({ isActive }) =>
+                  isActive ? "text-blue-400" : "text-black"
+                }
                 to="/"
                 onClick={() => setIsOpen(!isOpen)}
               >
@@ -81,7 +82,9 @@ const Header = () => {
             </li>
             <li className="hover:underline hover:decoration-solid ">
               <NavLink
-                className={({ isActive }) => (isActive ? "text-blue-400" : "")}
+                className={({ isActive }) =>
+                  isActive ? "text-blue-400" : "text-black"
+                }
                 to="projects"
                 onClick={() => setIsOpen(!isOpen)}
               >
@@ -90,7 +93,9 @@ const Header = () => {
             </li>
             <li className="hover:underline hover:decoration-solid ">
               <NavLink
-                className={({ isActive }) => (isActive ? "text-blue-400" : "")}
+                className={({ isActive }) =>
+                  isActive ? "text-blue-400" : "text-black"
+                }
                 to="contacts"
                 onClick={() => setIsOpen(!isOpen)}
               >

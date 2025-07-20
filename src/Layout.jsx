@@ -5,9 +5,9 @@ import { ThemeContext } from "./App";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 const Layout = () => {
-  const { setIsOpen } = useContext(ThemeContext);
+  const { setIsOpen, theme } = useContext(ThemeContext);
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className={`font-poppins ${theme} min-h-screen flex flex-col`}>
       <Header />
       <main className="flex-1" onClick={() => setIsOpen(false)}>
         <Outlet />

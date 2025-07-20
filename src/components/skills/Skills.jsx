@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useContext } from "react";
+
+import { ThemeContext } from "../../App";
+import Divider from "../divider/Divider";
+import Title from "../title/Title";
+
 import { cards } from "../../images/images";
+
 const Skills = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <div className="font-poppins bg-cyan-50">
-      <h2 className="text-center pt-3 text-2xl font-medium ">My Skills</h2>
+    <div className={theme}>
+      <div className=""></div>
+      <Title text="My Skills" styles="pt-3   " />
+
       <div className="grid grid-cols-2 gap-2  mt-3 mx-3 lg:grid-rows-2 lg:grid-cols-3">
         {cards.map((card) => {
           return (

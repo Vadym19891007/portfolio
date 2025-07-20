@@ -15,14 +15,12 @@ import {
 import { ThemeContext } from "../../App";
 
 const Footer = () => {
-  const { isDark, dark, white } = useContext(ThemeContext);
+  const { isDark, theme } = useContext(ThemeContext);
   return (
     <div
-      className={`${
-        isDark ? dark : white
-      }border-t-1 lg:pb-2 h-1 lg:h-auto  grid grid-cols-[1fr_1fr] items-center px-3 lg:grid-cols-1 lg:grid-rows-2 lg:text-center lg:gap-4`}
+      className={`${theme} border-t-1 lg:pb-2 h-auto py-2 grid grid-cols-[1fr_1fr] items-center px-3 lg:grid-cols-1 lg:grid-rows-2 lg:text-center lg:gap-4`}
     >
-      <div className="text-sm lg:text-base">Frontend React 2025</div>
+      <div className="text-sm lg:text-base"> © Vadym Dubovenko 2025</div>
       <ul className="flex flex-row justify-center items-center h-full gap-1 md:gap-3 ">
         <li>
           <a href="https://www.instagram.com/vadimdubovenko/" target="_blank">
