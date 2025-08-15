@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { myPhoto } from "../../images/images";
 import { ThemeContext } from "../../App";
+import Button from "../button/Button";
 const About = () => {
   const { theme } = useContext(ThemeContext);
   return (
@@ -18,14 +19,12 @@ const About = () => {
         </p>
         <p className="mt-2">{/* with passion for learning and creating. */}</p>
         <a href="../../../files/Lebenslauf.docx " download>
-          <button className="my-10 sm:mt-5 bg-blue-400 w-50 rounded-2xl h-10 hover:bg-blue-500 hover:-translate-y-[3px] click:bg-blue-500 transition-all duration-300 cursor-pointer">
-            Download CV
-          </button>
+          <Button>Download CV</Button>
         </a>
       </div>
       <div>
         <img
-          className="rounded-2xl h-auto max-w-50 md:max-w-70 lg:max-w-80"
+          className="rounded-2xl h-auto max-w-80 md:max-w-70 lg:max-w-90"
           src={myPhoto}
           alt="photo"
         />

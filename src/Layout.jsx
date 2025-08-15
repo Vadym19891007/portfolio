@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import React, { useState, useContext } from "react";
+import React, { useContext } from "react";
 import { ThemeContext } from "./App";
 
 import Header from "./components/header/Header";

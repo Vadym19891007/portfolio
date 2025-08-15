@@ -38,7 +38,7 @@ const Header = () => {
         <li className="  hover:decoration-solid ">
           <NavLink
             className={({ isActive }) =>
-              isActive ? "text-blue-400" : "hover:underline"
+              isActive ? "text-blue-400" : "hover:text-blue-700"
             }
             to="/"
           >
@@ -48,7 +48,7 @@ const Header = () => {
         <li className="hover:decoration-solid ">
           <NavLink
             className={({ isActive }) =>
-              isActive ? "text-blue-400" : "hover:underline "
+              isActive ? "text-blue-400" : "hover:text-blue-700  "
             }
             to="projects"
           >
@@ -58,7 +58,7 @@ const Header = () => {
         <li className=" hover:decoration-solid ">
           <NavLink
             className={({ isActive }) =>
-              isActive ? "text-blue-400" : "hover:underline "
+              isActive ? "text-blue-400" : "hover:text-blue-700 "
             }
             to="contacts"
           >

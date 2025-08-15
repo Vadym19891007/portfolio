@@ -10,6 +10,8 @@ import {
   githubBlack,
   whatsappBlack,
   telegramBlack,
+  linkedBlack,
+  linkedWhite,
 } from "../../images/images";
 
 import { ThemeContext } from "../../App";
@@ -53,7 +55,7 @@ const Footer = () => {
           </a>
         </li>
         <li>
-          <a href="#" target="_blank">
+          <a href="https://wa.me/4915172698611" target="_blank">
             <img
               className="w-10"
               src={isDark ? whatsapp : whatsappBlack}
@@ -66,6 +68,18 @@ const Footer = () => {
             <img
               className="w-10"
               src={isDark ? telegram : telegramBlack}
+              alt="Telegram"
+            />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/vadym-dubovenko-ab4542302/?trk=opento_sprofile_details"
+            target="_blank"
+          >
+            <img
+              className="w-10"
+              src={isDark ? linkedWhite : linkedBlack}
               alt="Telegram"
             />
           </a>

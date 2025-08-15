@@ -10,7 +10,7 @@ function AboutMe() {
     <div className={`${theme} pt-10`}>
       <Divider />
       <Title text="About me" styles="text-center font-medium py-8 " />
-      <ul className="px-2 pb-5 lg:text-lg">
+      <ul className="px-10 pb-5 lg:text-lg">
         <li>
           👋 Hi! My name is Vadym, and I’m a Frontend Developer with a strong
           technical background and passion for building modern web interfaces.

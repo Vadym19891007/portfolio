@@ -23,17 +23,25 @@ const Contacts = () => {
           text="Telegram/WhatsApp"
           styles="mt-3 text-2xl font-semibold lg:text-4xl animate-contactRight"
         />
-        <p className="text-sm text-gray-500 lg:text-base  animate-contactRight">
-          +15172698611
-        </p>
+
+        <a
+          className="block text-sm text-gray-500 lg:text-base  animate-contactRight"
+          href="https://wa.me/4915172698611"
+          target="_blank"
+        >
+          +4915172698611
+        </a>
 
         <Title
           text="Email"
           styles="mt-3 text-2xl font-semibold lg:text-4xl animate-contactLeft"
         />
-        <p className="text-sm text-gray-500 lg:text-base animate-contactLeft">
+        <a
+          href="mailto:dubovenko891@gmail.com"
+          className="block text-sm text-gray-500 lg:text-base animate-contactLeft"
+        >
           dubovenko891@gmail.com
-        </p>
+        </a>
       </div>
     </div>
   );
