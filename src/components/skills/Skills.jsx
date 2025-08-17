@@ -21,7 +21,7 @@ const Skills = () => {
                 {card.titel}
               </h3>
               <img
-                className="w-auto m-auto rounded-2xl shadow-2xl shadow-gray-900"
+                className="w-[200px] h-[150px] m-auto rounded-2xl shadow-2xl shadow-gray-900 lg:w-[250px] lg:h-aito"
                 src={card.img}
                 alt={card.titel}
               />

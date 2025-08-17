@@ -19,7 +19,7 @@ function Project({ project }) {
       <a className="block m-auto " target="_blanc" href={link}>
         <Button styles="block m-auto ">GitHub</Button>
       </a>
-      <div className="lg:hidden py-4">{divider}</div>
+      <div className="lg:hidden py-4 ">{divider}</div>
     </li>
   );
 }

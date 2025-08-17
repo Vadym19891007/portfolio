@@ -6,7 +6,7 @@ function Divider({ styles }) {
 
   return (
     <div
-      className={`  w-[300px] xl:w-[600px] m-auto h-[2px]  ${styles}  ${
+      className={`  w-[150px] sm:w-[300px] xl:w-[600px] m-auto h-[2px]  ${styles}  ${
         isDark ? "bg-white" : "bg-gray-500 "
       }`}
     ></div>

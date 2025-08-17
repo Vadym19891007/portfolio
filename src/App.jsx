@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { createContext, useState } from "react";
 import Home from "./components/home/Home";
 import Layout from "./Layout";
@@ -6,7 +6,7 @@ import Projects from "./components/projects/Projects";
 import Contacts from "./components/contact/Contacts";
 
 export const ThemeContext = createContext();
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Layout />,
