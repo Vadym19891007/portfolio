@@ -4,7 +4,7 @@ import { ThemeContext } from "../../App";
 import Divider from "../divider/Divider";
 import Title from "../title/Title";
 
-import { cards } from "../../images/images";
+import { cards } from "../../data/images";
 
 const Skills = () => {
   const { theme } = useContext(ThemeContext);

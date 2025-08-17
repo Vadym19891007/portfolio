@@ -67,8 +67,8 @@ const Header = () => {
         </li>
       </ul>
       {isOpen && (
-        <div className="md:hidden h-screen w-50 absolute right-0 z-10 top-15 bg-white pt-30">
-          <ul className="flex flex-col  justify-center items-center gap-y-7">
+        <div className="md:hidden h-screen w-70 absolute right-0 z-10 top-15 bg-white pt-30">
+          <ul className="flex flex-col  justify-center items-center gap-y-20 text-2xl">
             <li className="hover:underline hover:decoration-solid ">
               <NavLink
                 className={({ isActive }) =>

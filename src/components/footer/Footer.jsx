@@ -12,7 +12,7 @@ import {
   telegramBlack,
   linkedBlack,
   linkedWhite,
-} from "../../images/images";
+} from "../../data/images";
 
 import { ThemeContext } from "../../App";
 

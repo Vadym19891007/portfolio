@@ -1,4 +1,4 @@
-import { eCommerce, taskList, converter, userApp } from "./images/images";
+import { eCommerce, taskList, converter, userApp } from "./data/images";
 import Divider from "./components/divider/Divider";
 
 const eCommerceDescription =

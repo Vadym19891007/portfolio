@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { myPhoto } from "../../images/images";
+import { myPhoto } from "../../data/images";
 import { ThemeContext } from "../../App";
 import Button from "../button/Button";
 const About = () => {
