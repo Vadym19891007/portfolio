@@ -11,18 +11,18 @@ export default defineConfig({
     tailwindcss(),
     viteImagemin({
       gifsicle: {
-        optimizationLevel: 7,
+        optimizationLevel: 1,
         interlaced: false,
       },
       optipng: {
-        optimizationLevel: 7,
+        optimizationLevel: 1,
       },
       mozjpeg: {
-        quality: 10,
+        quality: 90,
       },
       pngquant: {
-        quality: [0.3, 0.4],
-        speed: 3,
+        quality: [0.8, 0.9],
+        speed: 1,
       },
       svgo: {
         plugins: [

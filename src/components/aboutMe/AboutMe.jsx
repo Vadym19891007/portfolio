@@ -22,12 +22,7 @@ function AboutMe() {
           where I found my passion in creating interactive and responsive user
           experiences.
         </li>
-        <li className="pt-10">
-          💻 I have around 6 months of professional experience working as a
-          Frontend Developer. During this time, I developed real-world projects
-          using **React**, **JavaScript**, **Tailwind CSS**, and version control
-          with **Git**.
-        </li>
+
         <li className="pt-10">
           <ul className="pl-3">
             🎯 My focus is on:
@@ -36,8 +31,8 @@ function AboutMe() {
             </li>
             <li className="pt-5">- Creating clean and maintainable code</li>
             <li className="pt-5">
-              - Working with modern tools like **React**, **Tailwind**,
-              **Redux-Toolkit.js**, and APIs
+              - Working with modern tools like React, Tailwind, Redux-Toolkit,
+              TypeScript and APIs
             </li>
             <li className="pt-5">
               - Paying attention to **UI/UX** and performance

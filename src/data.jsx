@@ -46,5 +46,5 @@ const projects = [
     divider: null,
   },
 ];
-
+export const lebenslauf = "/files/Lebenslauf.docx";
 export default projects;

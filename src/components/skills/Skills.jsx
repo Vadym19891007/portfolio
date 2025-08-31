@@ -16,12 +16,12 @@ const Skills = () => {
       <div className="grid grid-cols-2 gap-2  mt-3 mx-3 lg:grid-rows-2 lg:grid-cols-3">
         {cards.map((card) => {
           return (
-            <div className="mb-2 " key={card.id}>
-              <h3 className="text-center font-poppins font-medium ">
+            <div className="my-5 " key={card.id}>
+              <h3 className="text-center font-poppins font-medium lg:text-2xl">
                 {card.titel}
               </h3>
               <img
-                className="w-[200px] h-[150px] m-auto rounded-2xl shadow-2xl shadow-gray-900 lg:w-[250px] lg:h-aito"
+                className="w-[200px] h-[150px] m-auto rounded-2xl shadow-2xl shadow-gray-900 lg:w-[300px] lg:h-[250px] object-cover"
                 src={card.img}
                 alt={card.titel}
               />

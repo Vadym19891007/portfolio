@@ -12,11 +12,11 @@ const Header = () => {
 
   return (
     <header
-      className={`flex flex-row justify-between items-center focus:outline-0 border-b-1 font-poppins h-15 lg:h-25   ${
+      className={`flex flex-row justify-between items-center focus:outline-0 border-b-1 font-poppins h-15 lg:h-20 ${
         isDark ? dark : white
       } border-b-${theme}`}
     >
-      <div className="  text-sm  sm:pl-2 md:text-base xl:text-3xl">
+      <div className="  text-sm  sm:pl-2 md:text-[20px] lg:text-3xl">
         Portfolio from <span className="text-blue-400">Vadym Dubovenko</span>
       </div>
       <div
@@ -34,7 +34,7 @@ const Header = () => {
           )}
         </button>
       </div>
-      <ul className=" w-xs hidden md:flex flex-row justify-end  gap-3 sm:justify-center  md:justify-between md:pr-3 xl:w-110 xl:text-2xl">
+      <ul className=" w-xs hidden md:flex flex-row justify-end  gap-3 sm:justify-center  md:justify-between md:pr-3 xl:w-110 md:text-[20px] lg:text-2xl">
         <li className="  hover:decoration-solid ">
           <NavLink
             className={({ isActive }) =>

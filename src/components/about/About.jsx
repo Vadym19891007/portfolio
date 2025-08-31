@@ -18,13 +18,13 @@ const About = () => {
           Currently, I'm focused on developing responsive web application.
         </p>
         <p className="mt-2">{/* with passion for learning and creating. */}</p>
-        <a href="../../../files/Lebenslauf.docx " download>
-          <Button>Download CV</Button>
+        <a href="/files/Lebenslauf.docx" download>
+          {/* <Button>Download CV</Button> */}
         </a>
       </div>
       <div>
         <img
-          className="rounded-2xl h-auto max-w-80 md:max-w-70 lg:max-w-90"
+          className="rounded-2xl h-auto max-w-80 md:max-w-70 lg:max-w-90 shadow-black shadow-2xl lg:mt-10"
           src={myPhoto}
           alt="photo"
         />
