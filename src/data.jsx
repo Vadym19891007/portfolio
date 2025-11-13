@@ -5,7 +5,7 @@ const eCommerceDescription =
   " This is a small online store application built with React and React Router. It provides a smooth and dynamic shopping experience with the following features.React Router enables client-side navigation without page reloads, making the app fast and user-friendly. Ideal as a foundation for more complex e-commerce platforms.";
 
 const toDo =
-  "This is a simple and intuitive To-do List application built with React with TypeScript and Next.js. It allows users to efficiently manage their daily tasks with the following features: Add and delete tasks, Sort tasks by priority and due date, Keep track of deadlines and important tasks, Clean and user-friendly interface, The app is designed to help users stay organized and focused. It's a great tool for personal productivity and task management. ";
+  "This is a simple and intuitive To-do List application built with React with TypeScript, Tailwind and Next.js. It allows users to efficiently manage their daily tasks with the following features: Add and delete tasks, Sort tasks by priority and due date, Keep track of deadlines and important tasks, Clean and user-friendly interface, The app is designed to help users stay organized and focused. It's a great tool for personal productivity and task management! ";
 
 const convert =
   "A simple and responsive currency converter built with React. It fetches real-time exchange rates from the Frankfurter API, supports dynamic currency selection, input validation, loading/error states, and displays converted amounts with precision. Built with clean code structure and async/await logic using try/catch/finally for robust API handling.";
