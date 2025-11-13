@@ -10,7 +10,7 @@ const Layout = () => {
     <div
       className={`font-poppins ${theme} min-h-screen flex flex-col relative`}
     >
-      <div className="fixed top-0 w-full mb-10">
+      <div className="fixed top-0 w-full mb-10 z-10">
         <Header />
       </div>
 

@@ -10,7 +10,7 @@ import Project from "../project/Project";
 function Projects() {
   const { theme } = useContext(ThemeContext);
   return (
-    <div className={`${theme} py-3`}>
+    <div className={`${theme} py-10`}>
       <Title
         text="My Projects"
         styles=" text-center text-3xl font-poppins text-blue-500"
