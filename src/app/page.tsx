@@ -4,8 +4,8 @@ import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <div className="md:px-40">
-      <div className=" dark:bg-black  text-amber-50 relative  ">
-        <div className="relative h-[800px] md:h-screen py-40  bg-zinc-50 font-sans dark:bg-black px-3  ">
+      <div className=" bg-black  text-amber-50 relative  ">
+        <div className="relative h-[800px] md:h-screen py-40   font-sans bg-black px-3  ">
           <p className="text-[18px] md:text-[20px] text-red-500 relative z-20">
             HELLO, MY NAME IS VADYM
           </p>

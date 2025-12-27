@@ -18,7 +18,13 @@ const Project = async ({ params }: { params: Promise<Params> }) => {
   return (
     <div className="text-amber-50  py-14 px-8  flex flex-col items-center gap-4 lg:px-80">
       <h1 className="text-2xl">{project.title}</h1>
-      <Image src={project.img} alt={project.title} width={700} height={700} />
+      <Image
+        className="rounded-lg"
+        src={project.img}
+        alt={project.title}
+        width={700}
+        height={700}
+      />
       <p className="">{project.description}</p>
       <div className="flex flex-row justify-around items-center">
         <Link href={project.git} target="_blank">
