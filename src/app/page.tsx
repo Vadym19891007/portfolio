@@ -25,7 +25,7 @@ export default function Home() {
         <div className="absolute bottom-1 right-10 z-10 opacity-90 ">
           <Image src="/my-photo.png" alt="My photo" width={600} height={600} />
         </div>
-        <div className="border-b border-b-amber-50 px-5"></div>
+        <div className="w-[350px] md:w-full m-auto border-b border-b-amber-50 px-5"></div>
       </div>
 
       <Skills />
